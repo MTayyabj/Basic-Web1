@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.black-container {
+    background-color: #000000;
+    padding: 1rem;    
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Ensure space between the icons and the search container */
+}
+
+.search-container {
+    display: flex;
+    margin-left: auto;    
+}
+
+.search-input {
+    padding: 8px 15px;
+    width: 150px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 8px 15px;
+    background-color: #302f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 4px;
+}
+
+.main-name {
+    font-size: 2rem;
+    font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.main-name a {
+    font-size: medium;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.f1 p {
+    text-align: center;
+    font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin: auto;
+    max-width: 50%;
+    padding: 1em;
+}
+
+.icons-b {
+    text-align: center;
+}
+
+.icons-b a {
+    display: inline-block;
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.3em;
+}
+
+.email-form {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.search-button2 {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #302f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-input2 {
+    display: inline-block;
+    padding: 1rem 2rem;
+    max-width: 50%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+    .icons {
+        order: 1; /* First row */
+        width: 100%; /* Full width on mobile */
+        justify-content: center; /* Center icons */
+    }
+    .search-container {
+        order: 2; /* Second row */
+        width: 100%; /* Full width on mobile */
+        justify-content: center; /* Center search container */
+        margin: 20px 0em; /* Add some margin for spacing */
+    }
+    .search-button2 {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #302f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .f1 {
+        text-align: center;
+        margin: auto;
+        max-width: 100%;
+        padding: 1em;
+    }
+    .f1 p {
+        max-width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!--ROW-->
+    <header>
+        <div class="black-container">
+            <div class="nav">
+                <div class="icons">
+                    <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/yourpage" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="search-container">
+                    <form action="#">
+                        <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                    <ul id="searchResults"></ul>
+                </div>
+            </div>
+            <div class="main-name">
+                <h1>BETTER CHOICE</h1>
+                <a href="#">News</a>
+                <a href="#">Reviews</a>
+                <a href="#">Guides</a>
+                <a href="#">Trending</a>
+                <a href="#">Platform</a>
+            </div>
+        </div>
+    </header>        
+
+    <!--ROW-->
+    <footer>                  
+        <div class="black-container">
+            <div class="f1">
+                <p>At Spiel, every click is an adventure in the gaming world. Whether you’re a casual or hardcore gamer, we’re your go-to for the latest news, tips, and trends.</p>
+                <p>Subscribe to our newsletters. We’ll keep you in the loop.</p>
+                <div class="email-form">
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Type your email..." id="email" name="email" required class="search-input2">
+                        <input type="submit" value="→" class="search-button2">
+                    </form>
+                </div>
+            </div>
+            <div class="icons-b">
+                <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/yourpage" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>        
+            </div>
+            <div class="main-name">
+                <a href="#">News</a>
+                <a href="#">Reviews</a>
+                <a href="#">Guides</a>
+                <a href="#">Trending</a>
+                <a href="#">Platform</a>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
